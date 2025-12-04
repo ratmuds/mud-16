@@ -11,6 +11,7 @@ module ppu #(
     output logic [7:0] pixel_r,
     output logic [7:0] pixel_g,
     output logic [7:0] pixel_b,
+    output logic       pixel_sync,
 
     // 68000 Bus Arbitration Signals
     input  logic       cpu_bg_n,      // Bus Grant (Active Low) from CPU
@@ -360,7 +361,12 @@ module ppu #(
             pixel_r <= 0;
             pixel_g <= 0;
             pixel_b <= 0;
+            pixel_sync <= 0;
         end else begin
+            pixel_sync <= 1; // Always output a pixel
+            pixel_r <= 0;
+            pixel_g <= 0;
+            pixel_b <= 0;
 
             // Only access memory if we are the Bus Master
             /*if (bus_state == BUS_MASTER) begin
@@ -405,6 +411,7 @@ module ppu #(
                         pixel_r <= {color[11:8], 4'b0};
                         pixel_g <= {color[7:4], 4'b0};
                         pixel_b <= {color[3:0], 4'b0};
+                        pixel_sync <= 1; // Indicate pixel drawn
                     end
                 end
             end

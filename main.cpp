@@ -162,20 +162,21 @@ int main() {
     while (!WindowShouldClose()) {
 
         // Run some cycles
-        int cycles_per_frame = WIDTH * HEIGHT * 5;
-
-        for (int i = 0; i < cycles_per_frame; i++) {
-            sys.tick();
-
-            // Capture pixel data
-            static int p_idx = 0;
-            if (p_idx < WIDTH * HEIGHT * 4) {
-                pixels[p_idx++] = sys.ppu->pixel_r;
-                pixels[p_idx++] = sys.ppu->pixel_g;
-                pixels[p_idx++] = sys.ppu->pixel_b;
-                pixels[p_idx++] = 255;
+        for (int i = 0; i < WIDTH * HEIGHT; i++) {
+            // Run PPU until pixel outputted
+            while (sys.ppu->pixel_sync == 0) {
+                sys.tick();
             }
-            if (p_idx >= WIDTH * HEIGHT * 4) p_idx = 0;
+
+            // Clear pixel data for new frame
+            int base_idx = i * 4;
+            pixels[base_idx + 0] = sys.ppu->pixel_r;
+            pixels[base_idx + 1] = sys.ppu->pixel_g;
+            pixels[base_idx + 2] = sys.ppu->pixel_b;
+            pixels[base_idx + 3] = 255;
+
+            // Tick again so the flag resets
+            sys.tick();
         }
 
         UpdateTexture(fbTexture, pixels);
