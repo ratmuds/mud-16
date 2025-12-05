@@ -51,8 +51,13 @@ module ppu #(
     reg [11:0] palette [0:7][0:15];      // 8 palettes, 16 colors each, 12-bit RGB
     reg [7:0]  tile_memory [0:16383];    // 512 tiles * 32 bytes = 16KB
     reg [31:0] oam [0:MAX_OBJECTS-1];    // Object Attribute Memory
+
     reg [7:0]  bg_tile_map [0:4095];     // Background tile map (64x64 tiles = 4096 bytes)
-    reg [3:0]  bg_palette;               // Background palette index
+    reg [2:0]  bg_palette;               // Background palette index
+
+    reg [7:0]  ui_tile_map [0:399];      // UI tile map (40x10 tiles = 400 bytes; UI only at the top and bottom)
+    reg [2:0]  ui_top_palette;           // UI palette index (top)
+    reg [2:0]  ui_bottom_palette;        // UI palette index (bottom)
 
     // Palette 0: Background/World (for BG tiles - index 0 is transparent/sky)
     initial begin
@@ -458,7 +463,21 @@ module ppu #(
         bg_tile_map[23 * 64 + 28] = 8'd11; // Bush left
         bg_tile_map[23 * 64 + 29] = 8'd12; // Bush right
 
-        bg_palette = 4'd0; // Use palette 0 (background/world palette)
+        bg_palette = 3'd0; // Use palette 0 (background/world palette)
+
+        //========================================================================
+        // UI Tile Map (40x10 tiles, 8x8 pixels each)
+        // UI is shown on the top and bottom 5 rows of the screen
+        //========================================================================
+
+        for (integer x = 0; x < 40; x = x + 1) begin
+            for (integer y = 0; y < 10; y = y + 1) begin
+                ui_tile_map[y * 40 + x] = 8'h11;
+            end
+        end
+
+        ui_top_palette = 3'd2;    // Use palette 1 for top UI
+        ui_bottom_palette = 3'd2; // Use palette 1 for bottom UI
     end
 
     /*always_ff @(posedge clk) begin
@@ -568,10 +587,25 @@ module ppu #(
             logic [3:0] bg_pixel_val;
             logic [11:0] bg_tile_color;
 
+            // UI Rendering
+            logic [5:0] ui_tile_x;
+            logic [5:0] ui_tile_y;
+            logic [7:0] ui_tile_idx;
+            logic [2:0] ui_local_x;
+            logic [2:0] ui_local_y;
+            logic [13:0] ui_byte_addr;
+            logic [7:0] ui_byte;
+            logic [3:0] ui_pixel_val;
+            logic [11:0] ui_tile_color;
+            logic       ui_render = 0;
+
+            // Get background tile data
+            // TODO: add scrolling offsets
             bg_tile_x = pixel_x[8:3]; // pixel_x / 8
             bg_tile_y = pixel_y[8:3]; // pixel_y / 8
             bg_tile_idx = bg_tile_map[{bg_tile_y, bg_tile_x}]; // 64x64 map
 
+            // Local pixel within tile
             bg_local_x = pixel_x[2:0];
             bg_local_y = pixel_y[2:0];
 
@@ -580,8 +614,11 @@ module ppu #(
             bg_byte = tile_memory[bg_byte_addr];
             bg_pixel_val = bg_local_x[0] ? bg_byte[3:0] : bg_byte[7:4];
 
+            // Get color from palette
             bg_tile_color = palette[bg_palette][bg_pixel_val];
 
+            // Set pixel to background color initially
+            // TODO: possible optimization if other pixels are going to be rendered on top anyway
             pixel_sync <= 1; // Always output a pixel
             if (bg_pixel_val != 0) begin
                 pixel_r <= {bg_tile_color[11:8], bg_tile_color[11:8]};
@@ -606,6 +643,7 @@ module ppu #(
             end*/
 
             // Loop through objects
+            // TODO: possible optimization: only check objects that are likely to be on this scanline
             for (i = 0; i < MAX_OBJECTS; i = i + 1) begin
                 object = oam[i];
 
@@ -646,6 +684,49 @@ module ppu #(
                         pixel_b <= {color[3:0], color[3:0]};
                         pixel_sync <= 1; // Indicate pixel drawn
                     end
+                end
+            end
+
+            // Render UI
+
+            // Get UI tile data
+            ui_tile_x = pixel_x[8:3]; // pixel_x / 8
+            ui_tile_y = pixel_y[8:3]; // pixel_y / 8
+
+            if (ui_tile_y < 5) begin
+                ui_render = 1;
+            end
+
+            if (ui_tile_y >= 25) begin
+                ui_render = 1;
+                ui_tile_y = ui_tile_y - 5'd20; // Shift to 0-4 range as UI is at bottom
+            end
+
+            // Render UI if in UI area (top and bottom bar)
+            if (ui_render) begin
+                ui_tile_idx = ui_tile_map[ui_tile_y * 40 + ui_tile_x];
+
+                // Local pixel within tile
+                ui_local_x = pixel_x[2:0];
+                ui_local_y = pixel_y[2:0];
+
+                // 32 bytes per tile, 4 bytes per row (8 pixels / 2)
+                ui_byte_addr = (14'(ui_tile_idx) << 5) + (14'(ui_local_y) << 2) + (14'(ui_local_x) >> 1);
+                ui_byte = tile_memory[ui_byte_addr];
+                ui_pixel_val = ui_local_x[0] ? ui_byte[3:0] : ui_byte[7:4]; // Select nibble (2 pixels per byte)
+
+                // Get color from palette
+                if (ui_tile_y < 5) begin
+                    ui_tile_color = palette[ui_top_palette][ui_pixel_val];
+                end else begin
+                    ui_tile_color = palette[ui_bottom_palette][ui_pixel_val];
+                end
+
+                // Set pixel
+                if (ui_pixel_val != 0) begin
+                    pixel_r <= {ui_tile_color[11:8], ui_tile_color[11:8]};
+                    pixel_g <= {ui_tile_color[7:4], ui_tile_color[7:4]};
+                    pixel_b <= {ui_tile_color[3:0], ui_tile_color[3:0]};
                 end
             end
 
