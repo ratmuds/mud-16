@@ -1,6 +1,7 @@
 #include "Vppu.h"
 #include "verilated.h"
 #include "raylib.h"
+#include "vram_init_data.h"
 #include <vector>
 #include <cstdint>
 #include <cstring>
@@ -8,7 +9,7 @@
 const int WIDTH  = 320;
 const int HEIGHT = 240;
 const int SCALE  = 2;
-const int RAM_SIZE = 1024 * 1024;
+const int RAM_SIZE = 512 * 1024;
 
 // -----------------------------------------------------------------------------
 // System Simulation Class
@@ -27,7 +28,7 @@ public:
         ppu = new Vppu;
         ram.resize(RAM_SIZE);
         memset(ram.data(), 0, RAM_SIZE);
-        init_ram_pattern();
+        vram_init::load(ram);
 
         // Initial pin states
         ppu->clk = 0;

@@ -85,12 +85,14 @@ set(VERILATOR_RUNTIME_SOURCES
 
 add_executable(mud16
     ${CMAKE_SOURCE_DIR}/main.cpp
+    ${CMAKE_SOURCE_DIR}/vram_init_data.cpp
     ${VERILATOR_GENERATED_SOURCES}
     ${VERILATOR_RUNTIME_SOURCES}
 )
 
 target_include_directories(mud16 PRIVATE
     ${OBJ_DIR}
+    include
     ${VERILATOR_ROOT}/include
     ${VERILATOR_ROOT}/include/vltstd
 )
