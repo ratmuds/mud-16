@@ -413,6 +413,8 @@ module ppu #(
 
     reg [12:0] pixel_x;
     reg [11:0] pixel_y;
+    reg [8:0]  scroll_x; // TODO: make these writeable by CPU
+    reg [8:0]  scroll_y;
     reg [31:0] cached_rdata;
 
     // Loop and intermediate variables for object rendering
@@ -433,6 +435,8 @@ module ppu #(
 
     always_ff @(posedge clk) begin
         if (reset) begin
+            scroll_x <= 0;
+            scroll_y <= 0;
             pixel_x <= 0;
             pixel_y <= 0;
             pixel_r <= 0;
@@ -442,6 +446,8 @@ module ppu #(
             need_mem_refresh <= 0;
         end else begin
             // Background Rendering
+            logic [12:0] scrolled_x;
+            logic [11:0] scrolled_y;
             logic [5:0] bg_tile_x;
             logic [5:0] bg_tile_y;
             logic [7:0] bg_tile_idx;
@@ -475,14 +481,16 @@ module ppu #(
                 need_mem_refresh <= 0;
 
                 // Get background tile data
-                // TODO: add scrolling offsets
-                bg_tile_x = pixel_x[8:3]; // pixel_x / 8
-                bg_tile_y = pixel_y[8:3]; // pixel_y / 8
-                bg_tile_idx = bg_tile_map[{bg_tile_y, bg_tile_x}]; // 64x64 map
+                scrolled_x = pixel_x + scroll_x;
+                scrolled_y = pixel_y + scroll_y;
+
+                bg_tile_x = scrolled_x[8:3];
+                bg_tile_y = scrolled_y[8:3];
+                bg_tile_idx = bg_tile_map[{bg_tile_y[5:0], bg_tile_x[5:0]}]; // 64x64 map, so mask addresses
 
                 // Local pixel within tile
-                bg_local_x = pixel_x[2:0];
-                bg_local_y = pixel_y[2:0];
+                bg_local_x = scrolled_x[2:0];
+                bg_local_y = scrolled_y[2:0];
 
                 // 32 bytes per tile, 4 bytes per row (8 pixels / 2)
                 bg_byte_addr = (14'(bg_tile_idx) << 5) + (14'(bg_local_y) << 2) + (14'(bg_local_x) >> 1);
