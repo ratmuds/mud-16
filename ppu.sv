@@ -63,6 +63,7 @@ module ppu #(
     reg  [15:0] bus_wdata_latched;
     reg  [19:0] bus_addr_latched;
     reg         bus_op_done;
+    reg         cpu_as_high_seen;
 
     // Internal requests
     logic want_bus;
@@ -119,6 +120,7 @@ module ppu #(
             bus_wait_cnt      <= 0;
             bus_rdata_latched <= 0;
             bus_op_done       <= 0;
+            cpu_as_high_seen  <= 0;
         end else begin
             // default strobes low each cycle
             mem_read  <= 0;
@@ -137,8 +139,9 @@ module ppu #(
 
                 REQUEST_BUS: begin
                     ppu_br_n <= 0; // hold request
-                    if (!cpu_bg_n && cpu_as_n) begin
-                        bus_state <= SEIZE_BUS;
+                    cpu_as_high_seen <= cpu_as_n;
+                    if (!cpu_bg_n && cpu_as_n && cpu_as_high_seen) begin
+                        bus_state <= SEIZE_BUS; // CPU granted and AS high for a full cycle
                     end
                 end
 
@@ -464,6 +467,9 @@ module ppu #(
             logic [11:0] ui_tile_color;
             logic       ui_render = 0;
 
+            // Reset sync flag
+            pixel_sync <= 0;
+
             // Check for start of frame
             if (pixel_x == 0 && pixel_y == 0 && !mem_refreshed) begin
                 need_mem_refresh <= 1;
@@ -513,12 +519,12 @@ module ppu #(
 
                     // Check if object is enabled
                     if (object[31]) begin
-                        obj_x       <= object[8:0];
-                        obj_y       <= object[16:9];
-                        tile_idx    <= object[25:17];
+                        obj_x       = object[8:0];
+                        obj_y       = object[16:9];
+                        tile_idx    = object[25:17];
                         palette_idx <= object[28:26];
-                        hflip       <= object[29];
-                        vflip       <= object[30];
+                        hflip       = object[29];
+                        vflip       = object[30];
 
                         // Check if current pixel is within this object's bounds
                         if (pixel_x >= 13'(obj_x) && pixel_x < 13'(obj_x) + 13'd8 && pixel_y >= 12'(obj_y) && pixel_y < 12'(obj_y) + 12'd8) begin
