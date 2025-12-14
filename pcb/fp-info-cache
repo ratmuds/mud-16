@@ -1,4 +1,25 @@
-26426083483346561
+26724192198560750
+AS7C513B
+TSOP-44_10P2X18P4_ALL
+
+AS7C513B-12TCNTR 
+0
+44
+44
+AS7C513B
+TSOP-44_10P2X18P4_ALL-L
+
+AS7C513B-12TCNTR 
+0
+44
+44
+AS7C513B
+TSOP-44_10P2X18P4_ALL-M
+
+AS7C513B-12TCNTR 
+0
+44
+44
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59681,6 +59702,13 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
+ECS_2100A_120
+OSC_ECS-2100A-120
+
+
+0
+4
+4
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -65453,6 +65481,20 @@ Inductor_SMD
 L_Wuerth_WE-XHMI-8080
 Inductor, Wuerth, WE-XHMI 8080, 8.3mmx8.8mm, https://katalog.we-online.de/pbs/datasheet/74439358068.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 Inductor Wuerth WE-XHMI 8080
+0
+2
+2
+Inductor_SMD
+L_Wuerth_XHMI-6060
+Inductor, Wuerth, XHMI-6060, 6.65x6.45x5.8mm, (https://www.we-online.com/components/products/datasheet/74439346068.pdf), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_XHMI-8080
+Inductor, Wuerth, XHMI-8080, 8.8x8.3x7.8mm, (https://www.we-online.com/components/products/datasheet/74439358068.pdf), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
 0
 2
 2
@@ -73712,7 +73754,7 @@ BGA-48
 Package_BGA
 BGA-63_9x11mm_Layout10x12_P0.8mm
 BGA-63, 9.0x11.0mm, 63 Ball, 10x12 Layout, 0.8mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.jedec.org/system/files/docs/MO-207N.pdf
-BGA 63 0.8
+BGA 63 0.8 JEDEC MO-207N DH-z
 0
 63
 63
@@ -73768,14 +73810,14 @@ BGA-100
 Package_BGA
 BGA-100_12x18mm_Layout10x17_P1mm
 BGA-100, 12x18mm, 100 Ball, 10x17 Layout, 1mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.jedec.org/system/files/docs/MO-304D.pdf
-BGA 100 1
+BGA 100 1 JEDEC MO-304D P18.0x12.0-EJ-100A
 0
 100
 100
 Package_BGA
 BGA-100_14x18mm_Layout10x17_P1mm
 BGA-100, 14x18mm, 100 Ball, 10x17 Layout, 1mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.jedec.org/system/files/docs/MO-304D.pdf
-BGA 100 1
+BGA 100 1 JEDEC MO-304D P18.0x14.0-EJ-100A
 0
 100
 100
@@ -73796,7 +73838,7 @@ BGA-132
 Package_BGA
 BGA-132_12x18mm_Layout11x17_P1mm
 BGA-132, 12x18mm, 132 Ball, 11x17 Layout, 1mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.jedec.org/system/files/docs/MO-304D.pdf
-BGA 132 1
+BGA 132 1 JEDEC MO-304D P18.0x12.0-EJ-132B
 0
 132
 132
@@ -73824,7 +73866,7 @@ VBGA-152
 Package_BGA
 BGA-152_14x18mm_Layout13x17_P1mm
 BGA-152, 14x18mm, 152 Ball, 13x17 Layout, 1mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.jedec.org/system/files/docs/MO-304D.pdf
-BGA 152 1
+BGA 152 1 JEDEC MO-304D P18.0x14.0-EJ-152D
 0
 152
 152
@@ -74718,6 +74760,13 @@ BGA 12 0.5 R-XBGA-N12
 24
 12
 Package_BGA
+Texas_DSBGA-12_2.11x1.61mm_Layout4x3_P0.5mm
+Texas Instruments, YZG (R-XBGA-N12) package, 0.275 .. 0.475mm body thickness, NSMD, 2.11x1.61mm, 12 Ball, 4x3 Layout, 0.5mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.ti.com/lit/ds/symlink/tsc2007.pdf#page=34, https://www.ti.com/lit/ml/mxbg028d/mxbg028d.pdf
+BGA 12 0.5 UFBGA-12_2.11x1.61mm_Layout4x3_P0.5mm Die-Size-Ball-Grid-Array
+0
+12
+12
+Package_BGA
 Texas_DSBGA-16_2.39x2.39mm_Layout4x4_P0.5mm
 Texas Instruments, DSBGA, area grid, YZF, YZF0016, 2.39x2.39mm, 16 Ball, 4x4 Layout, 0.5mm Pitch, https://www.ti.com/lit/ds/symlink/dac80508.pdf
 BGA 16 0.5
@@ -75251,28 +75300,28 @@ LFCSP 8 0.5
 5
 Package_CSP
 Analog_LFCSP-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm
-Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_16_23.pdf, CP-16-23), generated with kicad-footprint-generator ipc_noLead_generator.py
+Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-16/cp_16_23.pdf, CP-16-23), generated with kicad-footprint-generator ipc_noLead_generator.py
 Analog LFCSP NoLead
 0
 21
 17
 Package_CSP
 Analog_LFCSP-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm_ThermalVias
-Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_16_23.pdf, CP-16-23), generated with kicad-footprint-generator ipc_noLead_generator.py
+Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-16/cp_16_23.pdf, CP-16-23), generated with kicad-footprint-generator ipc_noLead_generator.py
 Analog LFCSP NoLead
 0
 31
 17
 Package_CSP
 Analog_LFCSP-16-1EP_4x4mm_P0.65mm_EP2.35x2.35mm
-Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_16_20.pdf, CP-16-20), generated with kicad-footprint-generator ipc_noLead_generator.py
+Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-16/cp_16_20.pdf, CP-16-20), generated with kicad-footprint-generator ipc_noLead_generator.py
 Analog LFCSP NoLead
 0
 21
 17
 Package_CSP
 Analog_LFCSP-16-1EP_4x4mm_P0.65mm_EP2.35x2.35mm_ThermalVias
-Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_16_20.pdf, CP-16-20), generated with kicad-footprint-generator ipc_noLead_generator.py
+Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-16/cp_16_20.pdf, CP-16-20), generated with kicad-footprint-generator ipc_noLead_generator.py
 Analog LFCSP NoLead
 0
 31
@@ -75321,7 +75370,7 @@ CSP 80 0.4 80-ball WLCSP
 80
 Package_CSP
 LFCSP-6-1EP_2x2mm_P0.65mm_EP1x1.6mm
-LFCSP, 6 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_6_3.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+LFCSP, 6 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-6/cp_6_3.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 LFCSP NoLead
 0
 11
@@ -75517,14 +75566,14 @@ LFCSP NoLead
 25
 Package_CSP
 LFCSP-24-1EP_4x4mm_P0.5mm_EP2.3x2.3mm
-LFCSP, 24 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_24_14.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+LFCSP, 24 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-24/cp_24_14.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 LFCSP NoLead
 0
 29
 25
 Package_CSP
 LFCSP-24-1EP_4x4mm_P0.5mm_EP2.3x2.3mm_ThermalVias
-LFCSP, 24 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_24_14.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+LFCSP, 24 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-24/cp_24_14.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 LFCSP NoLead
 0
 39
@@ -76917,7 +76966,7 @@ DFN 0.5
 11
 Package_DFN_QFN
 DFN-10-1EP_3x3mm_P0.5mm_EP1.7x2.5mm
-DFN, 10 Pin (https://www.monolithicpower.com/pub/media/document/MPQ2483_r1.05.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+DFN, 10 Pin (https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MPQ2483/document_id/2064/), generated with kicad-footprint-generator ipc_noLead_generator.py
 DFN NoLead
 0
 15
@@ -76945,14 +76994,14 @@ DFN NoLead
 11
 Package_DFN_QFN
 DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm
-DFN, 10 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/3471fb.pdf#page=15), generated with kicad-footprint-generator ipc_noLead_generator.py
+DFN, 10 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/lt3471.pdf#page=15), generated with kicad-footprint-generator ipc_noLead_generator.py
 DFN NoLead
 0
 15
 11
 Package_DFN_QFN
 DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm_ThermalVias
-DFN, 10 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/3471fb.pdf#page=15), generated with kicad-footprint-generator ipc_noLead_generator.py
+DFN, 10 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/lt3471.pdf#page=15), generated with kicad-footprint-generator ipc_noLead_generator.py
 DFN NoLead
 0
 22
@@ -77475,6 +77524,13 @@ Maxim TDFN NoLead
 0
 11
 7
+Package_DFN_QFN
+Maxim_TDFN-10-1EP_3x3mm_P0.5mm_EP1.58x2.35mm
+Maxim  TDFN, 10 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/tqfn/21-0137.pdf and https://www.analog.com/media/en/package-pcb-resources/land-pattern/tdfn-ep/90-0003.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+Maxim TDFN NoLead T1033-2 MO229/WEED-3
+0
+15
+11
 Package_DFN_QFN
 Maxim_TDFN-12-1EP_3x3mm_P0.5mm_EP1.7x2.5mm
 Maxim TDFN, 12 Pin (https://www.analog.com/media/en/package-pcb-resources/land-pattern/tdfn/90-0397.pdf)
@@ -78107,14 +78163,14 @@ QFN NoLead
 25
 Package_DFN_QFN
 QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm
-QFN, 24 Pin (http://www.alfarzpp.lv/eng/sc/AS3330.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN, 24 Pin (https://www.alldatasheet.com/datasheet-pdf/pdf/1159021/ALFA/AS3330.html), generated with kicad-footprint-generator ipc_noLead_generator.py
 QFN NoLead
 0
 29
 25
 Package_DFN_QFN
 QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias
-QFN, 24 Pin (http://www.alfarzpp.lv/eng/sc/AS3330.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN, 24 Pin (https://www.alldatasheet.com/datasheet-pdf/pdf/1159021/ALFA/AS3330.html), generated with kicad-footprint-generator ipc_noLead_generator.py
 QFN NoLead
 0
 39
@@ -78408,14 +78464,14 @@ QFN NoLead
 29
 Package_DFN_QFN
 QFN-28-1EP_6x6mm_P0.65mm_EP4.8x4.8mm
-QFN, 28 Pin (https://www.semtech.com/uploads/documents/sx1272.pdf#page=125), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN, 28 Pin (https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/440000001NCE/v_VBhk1IolDgxwwnOpcS_vTFxPfSEPQbuneK3mWsXlU page=125), generated with kicad-footprint-generator ipc_noLead_generator.py
 QFN NoLead
 0
 38
 29
 Package_DFN_QFN
 QFN-28-1EP_6x6mm_P0.65mm_EP4.8x4.8mm_ThermalVias
-QFN, 28 Pin (https://www.semtech.com/uploads/documents/sx1272.pdf#page=125), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN, 28 Pin (https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/440000001NCE/v_VBhk1IolDgxwwnOpcS_vTFxPfSEPQbuneK3mWsXlU page=125), generated with kicad-footprint-generator ipc_noLead_generator.py
 QFN NoLead
 0
 55
@@ -78989,14 +79045,14 @@ QFN NoLead
 53
 Package_DFN_QFN
 QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm
-QFN, 56 Pin (https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=634), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN, 56 Pin (https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=607), generated with kicad-footprint-generator ipc_noLead_generator.py
 QFN NoLead
 0
 61
 57
 Package_DFN_QFN
 QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm_ThermalVias
-QFN, 56 Pin (https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=634), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN, 56 Pin (https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=607), generated with kicad-footprint-generator ipc_noLead_generator.py
 QFN NoLead
 0
 66
@@ -79437,14 +79493,14 @@ DFN 0.5 Qorvo 2x2mm
 9
 Package_DFN_QFN
 Qorvo_TQFN66-48-1EP_6x6mm_P0.4mm_EP4.2x4.2mm
-Qorvo  TQFN66, 48 Pin (https://www.qorvo.com/products/d/da006847), generated with kicad-footprint-generator ipc_noLead_generator.py
+Qorvo  TQFN66, 48 Pin (https://www.qorvo.com/products/d/da006805), generated with kicad-footprint-generator ipc_noLead_generator.py
 Qorvo TQFN66 NoLead
 0
 58
 49
 Package_DFN_QFN
 Qorvo_TQFN66-48-1EP_6x6mm_P0.4mm_EP4.2x4.2mm_ThermalVias
-Qorvo  TQFN66, 48 Pin (https://www.qorvo.com/products/d/da006847), generated with kicad-footprint-generator ipc_noLead_generator.py
+Qorvo  TQFN66, 48 Pin (https://www.qorvo.com/products/d/da006805), generated with kicad-footprint-generator ipc_noLead_generator.py
 Qorvo TQFN66 NoLead
 0
 75
@@ -81277,6 +81333,20 @@ VQFN NoLead
 75
 49
 Package_DFN_QFN
+VQFN-48-1EP_7x7mm_P0.5mm_EP4.2x4.2mm
+VQFN, 48 Pin (Based on JEDEC MO-220 variation VKKD-2 (using Figure 1), custom Exposed Pad from NXP, https://www.jedec.org/document_search?search_api_views_fulltext=MO-220, https://www.nxp.com/docs/en/package-information/SOT619-28.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+VQFN NoLead NXP_SOT619-28
+0
+53
+49
+Package_DFN_QFN
+VQFN-48-1EP_7x7mm_P0.5mm_EP4.2x4.2mm_ThermalVias
+VQFN, 48 Pin (Based on JEDEC MO-220 variation VKKD-2 (using Figure 1), custom Exposed Pad from NXP, https://www.jedec.org/document_search?search_api_views_fulltext=MO-220, https://www.nxp.com/docs/en/package-information/SOT619-28.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+VQFN NoLead NXP_SOT619-28
+0
+70
+49
+Package_DFN_QFN
 VQFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm
 VQFN, 48 Pin (http://www.ti.com/lit/ds/symlink/cc1312r.pdf#page=48), generated with kicad-footprint-generator ipc_noLead_generator.py
 VQFN NoLead
@@ -81404,7 +81474,7 @@ powerpak mlp55-27l
 23
 Package_DFN_QFN
 W-PDFN-8-1EP_6x5mm_P1.27mm_EP3x3mm
-W-PDFN, 8 Pin (https://media-www.micron.com/-/media/client/global/documents/products/data-sheet/nor-flash/serial-nor/mt25q/die-rev-a/mt25q_qljs_u_256_aba_0.pdf#page=22), generated with kicad-footprint-generator ipc_noLead_generator.py
+W-PDFN, 8 Pin (https://www.mouser.com/datasheet/2/671/mt25q_qljs_u_256_aba_0-3178731.pdf#page=22), generated with kicad-footprint-generator ipc_noLead_generator.py
 W-PDFN NoLead
 0
 13
@@ -84155,7 +84225,7 @@ lga land grid array
 12
 Package_LGA
 LGA-14_2x2mm_P0.35mm_LayoutBorder3x4y
-LGA, 14 Pin (http://www.st.com/resource/en/datasheet/lis2dh.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+LGA, 14 Pin (https://www.st.com/resource/en/datasheet/lis2dh12.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 LGA NoLead
 0
 14
@@ -84183,7 +84253,7 @@ lga land grid array
 16
 Package_LGA
 LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y
-LGA, 16 Pin (http://www.st.com/resource/en/datasheet/lis331hh.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+LGA, 16 Pin (https://www.st.com/resource/en/datasheet/lis331dlh.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 LGA NoLead
 0
 16
@@ -84442,8 +84512,8 @@ LQFP QFP
 36
 Package_QFP
 LQFP-44_10x10mm_P0.8mm
-LQFP, 44 Pin (https://www.nxp.com/files-static/shared/doc/package_info/98ASS23225W.pdf?&fsrch=1), generated with kicad-footprint-generator ipc_gullwing_generator.py
-LQFP QFP
+LQFP, 44 Pin (JEDEC MS-026 variation BCB, 1.40mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://www.nxp.com.cn/docs/en/package-information/98ASS23225W.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+LQFP QFP NXP_SOT389-2 Onsemi_CASE-561AA Renesas_44-TQFP Renesas_PPG44D1 Infineon_PG-TQFP-44-801 Analog_ST-44-1
 0
 44
 44
@@ -84512,14 +84582,14 @@ LQFP QFP
 65
 Package_QFP
 LQFP-64-1EP_10x10mm_P0.5mm_EP6.5x6.5mm
-LQFP, 64 Pin (https://www.nxp.com/files-static/shared/doc/package_info/98ARH98426A.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+LQFP, 64 Pin (https://www.nxp.com/docs/en/package-information/98ARH98426A.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 LQFP QFP
 0
 90
 65
 Package_QFP
 LQFP-64-1EP_10x10mm_P0.5mm_EP6.5x6.5mm_ThermalVias
-LQFP, 64 Pin (https://www.nxp.com/files-static/shared/doc/package_info/98ARH98426A.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+LQFP, 64 Pin (https://www.nxp.com/docs/en/package-information/98ARH98426A.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 LQFP QFP
 0
 116
@@ -84589,8 +84659,8 @@ LQFP QFP
 100
 Package_QFP
 LQFP-128_14x14mm_P0.4mm
-LQFP, 128 Pin (https://www.renesas.com/eu/en/package-image/pdf/outdrawing/q128.14x14.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
-LQFP QFP
+LQFP, 128 Pin (JEDEC MS-026 variation BEE, 1.40mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BQ.pdf#page=423), generated with kicad-footprint-generator ipc_gullwing_generator.py
+LQFP QFP Microchip_128-Lead-Low-Profile-Plastic-Quad-Flat-Pack-(PT) Renesas_Q128.14x14
 0
 128
 128
@@ -84645,8 +84715,8 @@ LQFP QFP Infineon-PG-TQFP-176-801
 177
 Package_QFP
 LQFP-176_20x20mm_P0.4mm
-LQFP, 176 Pin (https://www.onsemi.com/pub/Collateral/566DB.PDF), generated with kicad-footprint-generator ipc_gullwing_generator.py
-LQFP QFP
+LQFP, 176 Pin (JEDEC MS-026 variation BFC, 1.40mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026), generated with kicad-footprint-generator ipc_gullwing_generator.py
+LQFP QFP Onsemi_CASE-566DB Texas_PBL-(S-PQFP-G176)
 0
 176
 176
@@ -84813,15 +84883,22 @@ TQFP QFP
 32
 Package_QFP
 TQFP-44-1EP_10x10mm_P0.8mm_EP4.5x4.5mm
-44-Lead Plastic Thin Quad Flatpack (MW) - 10x10x1.0 mm Body [TQFP] With 4.5x4.5 mm Exposed Pad (see Microchip Packaging Specification 00000049BS.pdf)
-QFP 0.8
+TQFP, 44 Pin (JEDEC MS-026 variation ACB, 1.00mm body thickness, custom Exposed Pad from Microchip, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BZ.pdf#page=662), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TQFP QFP Microchip_44-Lead-Plastic-Thin-Quad-Flatpack-(MW)
 0
 54
 45
 Package_QFP
+TQFP-44-1EP_10x10mm_P0.8mm_EP4.5x4.5mm_ThermalVias
+TQFP, 44 Pin (JEDEC MS-026 variation ACB, 1.00mm body thickness, custom Exposed Pad from Microchip, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BZ.pdf#page=662), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TQFP QFP Microchip_44-Lead-Plastic-Thin-Quad-Flatpack-(MW)
+0
+71
+45
+Package_QFP
 TQFP-44_10x10mm_P0.8mm
-TQFP, 44 Pin (JEDEC MS-026 variation ACB, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BZ.pdf#page=658), generated with kicad-footprint-generator ipc_gullwing_generator.py
-TQFP QFP
+TQFP, 44 Pin (JEDEC MS-026 variation ACB, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BZ.pdf#page=658), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TQFP QFP Microchip_44-Lead-Plastic-Thin-Quad-Flatpack-(PT)
 0
 44
 44
@@ -84988,8 +85065,8 @@ QFP 0.4
 120
 Package_QFP
 TQFP-128_14x14mm_P0.4mm
-TQFP128 14x14 / TQFP128 CASE 932BB (see ON Semiconductor 932BB.PDF)
-QFP 0.4
+TQFP, 128 Pin (JEDEC MS-026 variation AEE, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TQFP QFP Microsemi_VQ128 Onsemi_CASE-932BB
 0
 128
 128
@@ -85007,6 +85084,13 @@ TQFP QFP
 0
 144
 144
+Package_QFP
+TQFP-176_20x20mm_P0.4mm
+TQFP, 176 Pin (JEDEC MS-026 variation AFC, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TQFP QFP Microsemi_VQ176
+0
+176
+176
 Package_QFP
 TQFP-176_24x24mm_P0.5mm
 TQFP, 176 Pin (http://www.microsemi.com/index.php?option=com_docman&task=doc_download&gid=131095), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -86563,7 +86647,7 @@ SOIC SO
 28
 Package_SO
 SOIC-28W_7.5x18.7mm_P1.27mm
-SOIC, 28 Pin (https://www.akm.com/akm/en/file/datasheet/AK5394AVS.pdf#page=23), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC, 28 Pin (https://www.es.co.th/Schemetic/PDF/AK5394A.PDF#page=23), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOIC SO
 0
 28
@@ -88712,14 +88796,14 @@ WSON 0.5
 11
 Package_SON
 WSON-10-1EP_4x4mm_P0.8mm_EP2.6x3mm
-WSON, 10 Pin (https://www.ti.com/lit/ml/mpss046b/mpss046b.pdf?ts=1728800628041&ref_url=https%253A%252F%252Fwww.ti.com%252Fpackaging%252Fdocs%252Fsearchtipackages.tsp%253FpackageName%253DSON), generated with kicad-footprint-generator ipc_noLead_generator.py
+WSON, 10 Pin (https://www.ti.com/lit/ml/qfnd434a/qfnd434a.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 WSON NoLead Texas_DPR0010A
 0
 15
 11
 Package_SON
 WSON-10-1EP_4x4mm_P0.8mm_EP2.6x3mm_ThermalVias
-WSON, 10 Pin (https://www.ti.com/lit/ml/mpss046b/mpss046b.pdf?ts=1728800628041&ref_url=https%253A%252F%252Fwww.ti.com%252Fpackaging%252Fdocs%252Fsearchtipackages.tsp%253FpackageName%253DSON), generated with kicad-footprint-generator ipc_noLead_generator.py
+WSON, 10 Pin (https://www.ti.com/lit/ml/qfnd434a/qfnd434a.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 WSON NoLead Texas_DPR0010A
 0
 25
@@ -105153,6 +105237,937 @@ SOIC127P790X216-8N
 0
 8
 8
+nosuz_symbols
+2MD1-T2-B4-M2-Q-N
+toggle switch 2x3P
+
+0
+6
+6
+nosuz_symbols
+2MS1-T1-B4-VS2-Q-E-S
+3 points toggle switch with fixing points
+
+0
+5
+4
+nosuz_symbols
+4mm_SnapIn_Spacer
+Snap-In plastic spacer
+Snap-In plastic spacer onetouch
+0
+0
+0
+nosuz_symbols
+1608_OSxx1608
+
+
+0
+2
+2
+nosuz_symbols
+2214R-20SG-85-F1
+holizontal pin socket
+pin socket
+0
+20
+20
+nosuz_symbols
+5077CR-16-SMC2-BK-TR
+
+
+0
+16
+16
+nosuz_symbols
+A295-CTRPB-1
+
+
+0
+4
+4
+nosuz_symbols
+B2B-XH-A
+XH terminal post 2P
+XH 2P post
+0
+2
+2
+nosuz_symbols
+BH-341-2P
+AAx4 Battery folder
+battery
+0
+2
+2
+nosuz_symbols
+BarrelJack_MJ-179PH
+2.1mm DC Barrel Jack
+
+0
+3
+3
+nosuz_symbols
+CP_D6.3mm
+
+
+0
+2
+2
+nosuz_symbols
+CP_THT_D5
+
+
+0
+2
+2
+nosuz_symbols
+CSL1901xW
+LED
+LED 1608_0603
+0
+2
+2
+nosuz_symbols
+C_1005
+
+
+0
+2
+2
+nosuz_symbols
+C_1005_0402
+
+
+0
+2
+2
+nosuz_symbols
+C_1608
+
+
+0
+2
+2
+nosuz_symbols
+C_1608_0603
+
+
+0
+2
+2
+nosuz_symbols
+C_2012
+
+
+0
+2
+2
+nosuz_symbols
+C_2012_Large
+
+
+0
+2
+2
+nosuz_symbols
+DF40C-60DS_HIROSE
+
+DF40C-60DS-0.4V51 
+0
+60
+60
+nosuz_symbols
+DIP-10_OSX05201-X
+
+
+0
+10
+10
+nosuz_symbols
+DIP-14_ClockOscillator
+
+
+0
+14
+14
+nosuz_symbols
+DIP-20_TI-N
+
+
+0
+20
+20
+nosuz_symbols
+DIP-28_AS7C256C-15PCN
+32K x 8 bits high speed CMOS SRAM
+32K x 8 bits high speed CMOS SRAM
+0
+28
+28
+nosuz_symbols
+DIP-40_IM6100
+
+
+0
+40
+40
+nosuz_symbols
+DIP-40_TangNano20K
+
+
+0
+40
+40
+nosuz_symbols
+DIP-48_TangNano9K
+
+
+0
+48
+48
+nosuz_symbols
+DIP-60_DCJ11
+
+
+0
+60
+60
+nosuz_symbols
+DSIC-02-TS-GER
+P=2.54mm DIP Switch, 2 units
+DIP switch
+0
+4
+4
+nosuz_symbols
+DSIC-04-TS-GER
+P=2.54mm DIP Switch, 4 units
+DIP switch
+0
+8
+8
+nosuz_symbols
+DTS-6-V
+http://akizukidenshi.com/download/ds/cosland/DTS-6-V.PDF
+Tact Switch
+0
+4
+4
+nosuz_symbols
+DTSM-6x
+
+
+0
+4
+4
+nosuz_symbols
+Diode_SS2040FL
+
+
+0
+2
+2
+nosuz_symbols
+ERD216CSZ
+Rotary DIP Switch
+Rotary DIP Switch
+0
+6
+6
+nosuz_symbols
+ESP32-C3-MINI-1
+ESP32-C3-MINI-1 module
+ESP32, ESP32-C3, Wi-Fi, Bluetooth
+0
+61
+53
+nosuz_symbols
+ESP32-C3-WROOM-02
+
+
+0
+23
+19
+nosuz_symbols
+ESP32-C6-WROOM-1
+ESP32-C6 module
+ESP32 C6, RF module
+0
+43
+29
+nosuz_symbols
+ESP32-MINI-1
+ESP32-MINI-1 modulde
+ESP32-MINI-1, ESP32, WiFi, Bluetooth
+0
+63
+55
+nosuz_symbols
+ESP32-S3-MINI-1
+ESP32-S3-MINI-1
+ESP32, ESP32-S3
+0
+73
+65
+nosuz_symbols
+ESP32-S3-WROOM-1
+ESP32-S3 module
+ESP32-S3, Wi-Fi, Bluetooth, USB
+0
+50
+41
+nosuz_symbols
+ESP32-WROOM-32
+ESP32 module
+ESP32, Wi-Fi, Bluetooth
+0
+48
+39
+nosuz_symbols
+ESSOP-10_CH224K
+
+
+0
+14
+11
+nosuz_symbols
+FA-238V
+
+
+0
+4
+4
+nosuz_symbols
+FH-2x10SG
+2x10 vertical pin socket
+pin socket
+0
+20
+20
+nosuz_symbols
+GT-TC029x-Hxxx-L1N
+
+
+0
+2
+2
+nosuz_symbols
+GT-TC149X-HXXX-LX
+ Tactile Switches, 12mm x 12mm
+
+0
+4
+4
+nosuz_symbols
+GT-USB-9047A
+
+
+0
+16
+16
+nosuz_symbols
+IS-2235-G
+
+
+0
+6
+6
+nosuz_symbols
+Icon_Nosuz
+
+
+0
+0
+0
+nosuz_symbols
+K2-1809SN
+
+
+0
+4
+4
+nosuz_symbols
+K2-1822SA
+
+
+0
+2
+2
+nosuz_symbols
+LED_4mm
+
+
+0
+2
+2
+nosuz_symbols
+LED_5mm
+LED 5mm
+LED
+0
+2
+2
+nosuz_symbols
+LED_6mm
+
+
+0
+2
+2
+nosuz_symbols
+LTST-C195KGKFKT
+Two color LED
+
+0
+4
+4
+nosuz_symbols
+M3_mount
+M3 mounting hole
+M3 mount hole
+0
+0
+0
+nosuz_symbols
+NCD0603x1
+LED
+LED 1608 0603
+0
+2
+2
+nosuz_symbols
+NJL302L-F3
+Ambient Light Sensor
+Ambient Light Sensor
+0
+2
+2
+nosuz_symbols
+NJL302L-F5
+Ambient Light Sensor
+Ambient Light Sensor
+0
+2
+2
+nosuz_symbols
+ORH-x36x
+
+
+0
+2
+2
+nosuz_symbols
+OSXXXX313XA-5V
+
+
+0
+2
+2
+nosuz_symbols
+PGA-168_i486
+PGA 168 socket
+PGA 168 socket
+0
+168
+168
+nosuz_symbols
+PKLCS1212E4001
+Piezo Buzzers & Audio Indicators
+Piezo Buzzers
+0
+2
+2
+nosuz_symbols
+QFN-56_RP2040
+
+
+0
+64
+57
+nosuz_symbols
+QFP-48_CH32Vx03CxT6
+
+
+0
+48
+48
+nosuz_symbols
+R_1005
+
+
+0
+2
+2
+nosuz_symbols
+R_1005_0402
+
+
+0
+2
+2
+nosuz_symbols
+R_1608
+
+
+0
+2
+2
+nosuz_symbols
+R_1608_0603
+
+
+0
+2
+2
+nosuz_symbols
+R_THT_SQP5W
+
+
+0
+2
+2
+nosuz_symbols
+Raspberry_Pi_HAT_conn
+
+
+0
+40
+40
+nosuz_symbols
+S2B-XH-A
+
+
+0
+2
+2
+nosuz_symbols
+S4B-XH-A
+XH connector P4 side type
+
+0
+4
+4
+nosuz_symbols
+SA10-11
+Single digit 7-segment LED display
+7-segment LED
+0
+11
+11
+nosuz_symbols
+SHT4x
+SHT4x Relative Humidity and Temperature Sensor
+humidity temperature sensore
+0
+4
+4
+nosuz_symbols
+SHTC3
+
+
+0
+5
+5
+nosuz_symbols
+SKRPAxE010
+
+
+0
+4
+4
+nosuz_symbols
+SKSTAXE010
+Tactile Switches, 8.5mm x 8.5mm
+
+0
+2
+2
+nosuz_symbols
+SM412301N
+
+
+0
+10
+10
+nosuz_symbols
+SMD3225-4P_TAXM12M4RLBDDT2T
+
+
+0
+4
+4
+nosuz_symbols
+SO-8_AP2112M
+SO-8 for AP2112M
+SO-8
+0
+8
+8
+nosuz_symbols
+SOD-123FL
+
+
+0
+2
+2
+nosuz_symbols
+SODIMM_2-2013310-x_TEC
+DDR3 SO-DIMM socket
+2-2013310-1, SO-DIMM, DDR3
+0
+214
+206
+nosuz_symbols
+SODIMM_2013289-1_TYC
+H 5.20mm
+2013289-1 
+0
+216
+206
+nosuz_symbols
+SOIC-6
+
+
+0
+5
+5
+nosuz_symbols
+SOIC-8_PJ85775P
+PJ85775P
+I2C Thermo sensor
+0
+8
+8
+nosuz_symbols
+SOIC-8_W25Q128JVS
+
+
+0
+8
+8
+nosuz_symbols
+SOIC-14_SN
+
+
+0
+14
+14
+nosuz_symbols
+SOIC-14_TXB0104
+
+
+0
+14
+14
+nosuz_symbols
+SOIC-16_SN74LVC138ADR
+
+
+0
+16
+16
+nosuz_symbols
+SOIC-20_SN74CB3T3245
+
+
+0
+20
+20
+nosuz_symbols
+SOIC-20_TI-NS
+
+
+0
+20
+20
+nosuz_symbols
+SOIC_N-8
+
+
+0
+8
+8
+nosuz_symbols
+SOP-8_CH340N
+
+
+0
+8
+8
+nosuz_symbols
+SOT-23-5L
+
+
+0
+5
+5
+nosuz_symbols
+SOT-23-5_TI
+
+
+0
+5
+5
+nosuz_symbols
+SOT-23-6
+
+
+0
+6
+6
+nosuz_symbols
+SOT-23_AM23ESGW
+Two color LED
+
+0
+3
+3
+nosuz_symbols
+SOT-23_AP2127N
+
+
+0
+3
+3
+nosuz_symbols
+SOT-23_IRLML6402
+
+SOT-23
+0
+3
+3
+nosuz_symbols
+SOT-23_SI3407
+SOT-23 for SI3407
+
+0
+3
+3
+nosuz_symbols
+SOT-26_74LVC1T45
+
+
+0
+6
+6
+nosuz_symbols
+SOT23_AP7333
+
+
+0
+3
+3
+nosuz_symbols
+SS-12SDP2
+slide switch
+slide switch 3P
+0
+3
+3
+nosuz_symbols
+SSOP-20_FT231X
+
+
+0
+20
+20
+nosuz_symbols
+SSOP-28_FTDI
+
+
+0
+28
+28
+nosuz_symbols
+SSOP5_TC7S32F
+
+
+0
+5
+5
+nosuz_symbols
+SSOP5_TC7S32FU
+
+
+0
+5
+5
+nosuz_symbols
+STCC4
+CO2 sencor
+CO2 sencor
+0
+8
+8
+nosuz_symbols
+SWPA6028Sxxx
+
+
+0
+2
+2
+nosuz_symbols
+TAEF-25xx
+
+
+0
+2
+2
+nosuz_symbols
+TEST-34
+TEst Pin
+Test pin Port
+0
+1
+1
+nosuz_symbols
+TO-252-3-L1
+
+
+0
+7
+3
+nosuz_symbols
+TS-06104
+
+
+0
+4
+4
+nosuz_symbols
+TSC015x
+
+
+0
+4
+4
+nosuz_symbols
+TSOP-48_12x18.4
+
+
+0
+48
+48
+nosuz_symbols
+TSOP-I-48_AS6C3216A
+
+AS6C3216A-55TIN 
+0
+48
+48
+nosuz_symbols
+TSOT-23-5_74AHC1G07GV
+
+
+0
+5
+5
+nosuz_symbols
+TSSOP-14_TXB0140
+
+
+0
+14
+14
+nosuz_symbols
+TSSOP-20_TI-PW
+TSSOP Texas Instruments
+
+0
+20
+20
+nosuz_symbols
+TSSOP-24_TI-PW
+
+
+0
+24
+24
+nosuz_symbols
+TVAF06-A020B-R
+
+
+0
+2
+2
+nosuz_symbols
+TVBP06-B043C
+
+
+0
+2
+2
+nosuz_symbols
+TYPEC-304-ACP16
+
+
+0
+16
+16
+nosuz_symbols
+TangMega138K_Console
+FPGA Module, Tang Mega 138K Console
+
+0
+80
+80
+nosuz_symbols
+Touch-Pad_10mm
+Touch Sensor Pad 10mm
+touch sensor
+0
+1
+1
+nosuz_symbols
+UJC-HP-3-SMT-TR
+USB Type-C  socket for only Power source
+USB Type-C
+0
+10
+10
+nosuz_symbols
+VSSOP-8_TI-DCU
+
+
+0
+8
+8
+nosuz_symbols
+WSON-6
+
+
+0
+10
+7
+nosuz_symbols
+Y_2P
+
+
+0
+2
+2
+nosuz_symbols
+Y_3P
+
+
+0
+2
+2
+nosuz_symbols
+ZX62R-B-5P
+USB micro B reverse type
+
+0
+9
+9
+nosuz_symbols
+jumper_XX-2
+jumper
+
+0
+2
+2
 ray
 3.7V_LiPo_Charging_Board
 

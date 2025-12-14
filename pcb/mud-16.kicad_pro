@@ -512,9 +512,33 @@
     "meta": {
       "version": 4
     },
-    "net_colors": null,
+    "net_colors": {
+      "3V3": "rgb(35, 255, 24)",
+      "5V": "rgb(255, 108, 111)"
+    },
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "BUS",
+        "pattern": "CPU_D15"
+      },
+      {
+        "netclass": "BUS",
+        "pattern": "CPU_A4"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "CPU_A4"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "3V3"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "GND"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
