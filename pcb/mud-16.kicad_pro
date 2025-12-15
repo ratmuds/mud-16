@@ -488,23 +488,30 @@
         "wire_width": 6
       },
       {
-        "name": "BUS",
+        "name": "3.3V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25
+        "track_width": 0.3
       },
       {
-        "name": "CLOCK",
+        "name": "BUS",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25
       },
       {
+        "name": "CLOCK",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25
+      },
+      {
         "name": "POWER",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4
       }
@@ -541,6 +548,10 @@
       {
         "netclass": "POWER",
         "pattern": "5V"
+      },
+      {
+        "netclass": "3.3V",
+        "pattern": "3V3"
       }
     ]
   },
