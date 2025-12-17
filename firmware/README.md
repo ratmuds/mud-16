@@ -2,6 +2,10 @@
 
 a little retro console with a Motorola 68000 and FPGA PPU
 
+# firmware
+
+`ppu.sv` is the Verilog code for the PPU. This is close to what will be the renderer of the game console. `main.cpp` is currently a test bench that gets the display output from the PPU and renders it with Raylib, as well as simulating the CPU bus arbitration and SRAM VRAM access
+
 # features
 
 -   3.5" IPS Display
