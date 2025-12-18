@@ -2,6 +2,10 @@
 
 a little retro console with a Motorola 68000 and FPGA PPU
 
+# firmware
+
+`ppu.sv` is the Verilog code for the PPU. This is close to what will be the renderer of the game console. `main.cpp` is currently a test bench that gets the display output from the PPU and renders it with Raylib, as well as simulating the CPU bus arbitration and SRAM VRAM access
+
 # features
 
 -   3.5" IPS Display
@@ -29,6 +33,12 @@ you'll need to flash everything to the FPGA which will load all the necessary da
 <img width="969" height="708" alt="image" src="https://github.com/user-attachments/assets/e5b9deb2-64ed-4b95-a4d6-570b346a1224" />
 
 <img width="776" height="844" alt="image" src="https://github.com/user-attachments/assets/61a36859-6648-4163-92f0-3ed2e4d5f020" />
+
+<img width="634" height="749" alt="image" src="https://github.com/user-attachments/assets/30c8e158-cffe-47ef-a230-8aa019040ac9" />
+
+
+<img width="668" height="683" alt="image" src="https://github.com/user-attachments/assets/aebc0cff-6ab6-47be-a35c-bd22d35141ee" />
+
 
 | Item                 | Quantity | Cost   | Link                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Notes                                                                    |
 | -------------------- | -------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
