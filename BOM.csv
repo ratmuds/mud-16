@@ -1,5 +1,5 @@
 Item,Quantity,Cost,Link,Notes
-PCB + PCBA,2,$50.32,https://jlcpcb.com/,"Two PCBs for the second rev, which will be thinner and fix possible bugs"
+PCB + PCBA,1,$59.01,https://jlcpcb.com/,"pcb + assembly + shipping"
 AMS1117-3.3,1,$0.32,AMS1117-3.3,Buck Converter
 AMS1117-1.8,1,$0.32,AMS1117-1.8,Buck Converter
 74LVC1G04GV,2,$0.10,74LVC1G04GV,Shift Register
@@ -10,6 +10,6 @@ Helping Hands,1,$8.62,https://www.aliexpress.us/item/3256806823951370.html?spm=a
 Logic Analyzer,1,$5.03,https://www.aliexpress.us/item/3256806925807843.html?spm=a2g0o.cart.0.0.162038da3R7bva&mp=1&pdp_npi=5%40dis!USD!USD%205.03!USD%205.03!!USD%205.03!!!%402103274e17658469136554395edac7!12000039443946717!ct!US!2891746612!!1!0&gatewayAdapt=glo2usa,Logic Analyzer
 ILI9488 IPS No Touch,1,$7.67,https://www.aliexpress.us/item/3256804339619267.html?spm=a2g0o.cart.0.0.162038da3R7bva&mp=1&pdp_npi=5%40dis!USD!USD%207.67!USD%207.67!!USD%207.67!!!%402103274e17658469136554395edac7!12000029476842562!ct!US!2891746612!!1!0&gatewayAdapt=glo2usa,Display
 IC DIP Sockets,1,$5.82,https://www.aliexpress.us/item/3256806149124857.html?spm=a2g0o.productlist.main.3.367f1666vkcIUl&algo_pvid=733ce6a9-0f7e-45bd-8a2b-3fed5976ca96&algo_exp_id=733ce6a9-0f7e-45bd-8a2b-3fed5976ca96-2&pdp_ext_f={%22order%22%3A%2232%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22}&pdp_npi=6%40dis!USD!0.98!0.98!!!6.88!6.88!%40210311a017658475262903951edaad!12000036800785975!sea!US!2891746612!X!1!0!n_tag%3A-29919%3Bd%3A25ee0dc0%3Bm03_new_user%3A-29895&curPageLogUid=54rKMPKbiLkA&utparam-url=scene%3Asearch|query_from%3A|x_object_id%3A1005006335439609|_p_origin_prod%3A,DIP16 sockets
-Misc,N/A,~$5?,,"Resistors, Caps, Buttons, etc"
+Small components: resistors caps etc,N/A,~$5?,,"Resistors, Caps, Buttons, etc"
 AS7C3513B-12TCN,2,$19.88,https://www.mouser.com/ProductDetail/Alliance-Memory/AS7C3513B-12TCN?qs=E5c5%252Bmu3i3%252BBrpzFfz%2FKzg%3D%3D,SRAM
 FH12-40S-0.5SH(55),1,$0.62,https://jlcpcb.com/partdetail/HRS_Hirose-FH12_40S_0_5SH_55/C202114,40 Pin FPC Connector (display)
