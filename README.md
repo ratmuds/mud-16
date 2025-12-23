@@ -36,8 +36,18 @@ you'll need to flash everything to the FPGA which will load all the necessary da
 
 <img width="634" height="749" alt="image" src="https://github.com/user-attachments/assets/30c8e158-cffe-47ef-a230-8aa019040ac9" />
 
-
 <img width="668" height="683" alt="image" src="https://github.com/user-attachments/assets/aebc0cff-6ab6-47be-a35c-bd22d35141ee" />
+
+# Schematic screenshots
+<img width="1305" height="851" alt="image" src="https://github.com/user-attachments/assets/888df6a2-5cc8-4e52-8c87-a8deead58fa0" />
+
+<img width="1157" height="758" alt="image" src="https://github.com/user-attachments/assets/bdadee85-f1ca-43fd-a96e-76ce4203eabe" />
+
+<img width="323" height="516" alt="image" src="https://github.com/user-attachments/assets/50b9708a-9f04-4dbf-bb50-381994a453e5" />
+
+<img width="874" height="715" alt="image" src="https://github.com/user-attachments/assets/a463c3ad-6a4d-48cb-ae64-662a80ccf469" />
+
+<img width="330" height="314" alt="image" src="https://github.com/user-attachments/assets/ef8db4b8-0f51-46a9-aee2-d714d6516aae" />
 
 
 | Item                 | Quantity | Cost   | Notes                                                                    | Link                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
